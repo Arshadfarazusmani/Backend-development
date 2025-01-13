@@ -40,3 +40,28 @@ Perhaps the most significant benefit of server-side code is that it allows you t
 
 It can even allow interaction with users of the site, sending notifications and updates via email or through other channels. All of these capabilities enable much deeper engagement with users.
 
+## Are server-side and client-side programming the same?
+
+Let's now turn our attention to the code involved in server-side and client-side programming. In each case, the code is significantly different:
+
+- They have different purposes and concerns.
+
+- They generally don't use the same programming languages (the exception being JavaScript, which can be used on the server- and client-side).
+- They run inside different operating system environments.
+
+Code running in the browser is known as client-side code and is primarily concerned with improving the appearance and behavior of a rendered web page. 
+This includes selecting and styling UI components, creating layouts, navigation, form validation, etc.
+
+By contrast, server-side website programming mostly involves choosing which content is returned to the browser in response to requests. 
+
+The server-side code handles tasks like validating submitted data and requests, using databases to store and retrieve data and sending the correct data to the client as required.
+
+![alt text](image-2.png)
+
+## Summary
+
+ server-side code is run on a web server and that its main role is to control what information is sent to the user (while client-side code mainly handles the structure and presentation of that data to the user).
+
+You should also understand that it is useful because it allows us to create websites that efficiently deliver information tailored for individual users and have a good idea of some of the things you might be able to do when you're a server-side programmer.
+
+Lastly, you should understand that server-side code can be written in a number of programming languages and that you should use a web framework to make the whole process easier.
