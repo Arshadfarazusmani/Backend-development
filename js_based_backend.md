@@ -40,3 +40,14 @@ They provide tools and libraries that simplify common web development tasks, inc
         Spring boot -> Java
 
 ## Express Web Framework
+Express is a popular web framework, written in JavaScript and hosted within the Node.js runtime environment. 
+
+
+## MERN Stack
+        -> MongoDB/MySQL
+        -> Express
+        -> React 
+        -> Nodejs
+
+![alt text](img/image-9.png)
+
