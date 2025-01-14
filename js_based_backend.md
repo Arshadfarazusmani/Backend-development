@@ -24,3 +24,19 @@ Node.js has an event-driven architecture capable of asynchronous I/O. These desi
 
 ## Js based backend 
 ![alt text](img/image-6.png)
+
+
+## Web Frameworks
+
+Server-side web frameworks (a.k.a. "web application frameworks") are software frameworks that make it easier to write, maintain and scale web applications.
+
+They provide tools and libraries that simplify common web development tasks, including routing URLs to appropriate handlers, interacting with databases, supporting sessions and user authorization, formatting output (e.g. HTML, JSON, XML), and improving security against web attacks.
+
+        Express-> Node.js/js
+        Django-> Python
+        Larvel-> php
+        ruby on rails-> ruby
+        Flask -> Python
+        Spring boot -> Java
+
+## Express Web Framework
