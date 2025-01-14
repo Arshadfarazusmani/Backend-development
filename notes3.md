@@ -17,6 +17,10 @@ Node.js is a cross-platform, open-source JavaScript runtime environment that can
 - Node.js lets developers use JavaScript to write command line tools and for server-side scripting. The ability to run JavaScript code on the server is often used to generate dynamic web page content before the page is sent to the user's web browser.
 -  Consequently, Node.js represents a "JavaScript everywhere" paradigm, unifying web-application development around a single programming language, as opposed to using different languages for the server- versus client-side programming.
 
-![alt text](image-5.png)
+![alt text](img/image-5.png)
 
 Node.js has an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize throughput and scalability in web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time communication programs and browser games)
+
+
+## Js based backend 
+![alt text](img/image-6.png)

@@ -3,7 +3,7 @@ Web browser communicate with web server using (HTTP) . When you click a link on 
 
 Web-server waits for clint's request message process them when they arrieved and reply to the web browser with http response message .
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 ## Static vs Dynamic Website
 
@@ -21,7 +21,7 @@ Web-server waits for clint's request message process them when they arrieved and
 ## Clint-side Scripting 
 Clint-side scripting deals with improving appearience and behaviour of rendring webpage 
 
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
 ## server-side 
 Mostly involve in choosing which content is to return to browser in response to request 
@@ -56,7 +56,7 @@ By contrast, server-side website programming mostly involves choosing which cont
 
 The server-side code handles tasks like validating submitted data and requests, using databases to store and retrieve data and sending the correct data to the client as required.
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 
 ## Summary
 
