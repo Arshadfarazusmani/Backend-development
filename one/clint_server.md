@@ -15,7 +15,7 @@ At the most basic level, whenever a browser needs a file that is hosted on a web
 
 When the request reaches the correct (hardware) web server, the (software) HTTP server accepts the request, finds the requested document, and sends it back to the browser, also through HTTP. (If the server doesn't find the requested document, it returns a 404 response instead.)
 
-![alt text](img/image-3.png)
+![alt text](/img/image-3.png)
 
 To publish a website, you need either a static or a dynamic web server.
 
@@ -41,7 +41,7 @@ Technically, you could host all those files on your own computer, but it's far m
 
 Second, a web server provides support for HTTP (Hypertext Transfer Protocol). As its name implies, HTTP specifies how to transfer hypertext (linked web documents) between two computers.
 
-![alt text](img/image-4.png)
+![alt text](/img/image-4.png)
 
 ### On a web server, the HTTP server is responsible for processing and answering incoming requests.
 
@@ -61,7 +61,7 @@ It is impossible to suggest a single off-the-shelf application server that will 
 ## static site 
 A static site is one that returns the same hard coded content from the server whenever a particular resource is requested. So for example if you have a page about a product at /static/my-product1.html, this same page will be returned to every user. If you add another similar product to your site you will need to add another page (e.g. my-product2.html) and so on. This can start to get really inefficient — what happens when you get to thousands of product pages? You would repeat a lot of code across each page (the basic page template, structure, etc.), and if you wanted to change anything about the page structure — like add a new "related products" section for example — then you'd have to change every page individually.
 
-![alt text](img/image-7.png)
+![alt text](/img/image-7.png)
 
 
 ## Dynamic sites
@@ -71,4 +71,4 @@ A dynamic site is one that can generate and return content based on the specific
 
 ## Working of Dynamic site 
 
-![alt text](img/image-8.png)
+![alt text](/img/image-8.png)

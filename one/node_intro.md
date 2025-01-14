@@ -20,7 +20,7 @@ Other common web-development tasks are not directly supported by Node itself. If
 # Express js (Web-Framework)
 Express is a popular web framework, written in JavaScript and hosted within the Node.js runtime environment. 
 
-![alt text](img/image-9.png)
+![alt text](/img/image-9.png)
 
 Express is the most popular Node.js web framework, and is the underlying library for a number of other popular Node.js frameworks. It provides mechanisms to:
 
