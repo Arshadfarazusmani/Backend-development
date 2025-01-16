@@ -1,0 +1,81 @@
+# DataBase connection 
+In this course we are using mongoDB Atlas .
+
+## What is MongoDB Atlas?
+MongoDB Atlas is a cloud-based, fully managed database-as-a-service (DBaaS) provided by MongoDB, Inc.. It simplifies the process of deploying, managing, and scaling MongoDB databases in the cloud. With Atlas, developers can focus on building applications rather than worrying about infrastructure and database maintenance.
+
+### How to Get Started with MongoDB Atlas
+Sign Up:
+
+Create an account at MongoDB Atlas.
+
+Create a Cluster:
+
+Choose a cluster type (shared, dedicated, or serverless).
+Select a cloud provider (AWS, Azure, or GCP) and a region.
+
+Whitelist IP Address:
+
+Add your local machine's IP address or a range of addresses that can access the database.
+
+Connect to Your Cluster:
+
+Use the connection string provided in the Atlas dashboard to connect to your cluster.
+
+.env->
+
+```js
+MONGO_URI=mongodb+srv://Arshad_Faraz_Usmani:your-password@backendlearning.dus8u.mongodb.net
+
+```
+Can be eccess using 
+```js
+const db_uri=Process.env.MONGO_URI
+```
+
+## DB connection 
+
+### important points 
+1. while dealing with the database some unexpected errors/problems may occurre so alwayes wrap db connection code into try-catch .  
+
+2. DB connection task is time taking so always use async await (for Asynchronus exicution )
+
+  -> DB alwayes in the other continent 
+
+3. 
+
+## DB connection Aproches 
+
+1. Writing all code in index.js file 
+```js
+
+import express from "express"
+const app = express()
+( async () => {
+    try {
+        await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
+        app.on("errror", (error) => {
+            console.log("ERRR: ", error);
+            throw error
+        })
+
+        app.listen(process.env.PORT, () => {
+            console.log(`App is listening on port ${process.env.PORT}`);
+        })
+
+    } catch (error) {
+        console.error("ERROR: ", error)
+        throw err
+    }
+})()
+
+
+
+```
+2. More professional aproch 
+ -> writing Db connection function and app in diffrent files and then import them 
+
+### db/db.js ->
+```js
+
+```
