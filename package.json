@@ -5,11 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-"dev": "nodemon Backend_with_express_and_mongoose/Backend_Project/src/index.js"  },
+    "dev": "nodemon Backend_with_express_and_mongoose/Backend_Project/src/index.js"
+  },
   "author": "Arshad Faraz",
   "license": "ISC",
   "dependencies": {
     "mongoose": "^8.9.5",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2"
   }
 }
