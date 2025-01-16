@@ -37,15 +37,17 @@ Without an ODM, you'd need to manually validate and enforce schemas in your code
 
 ## creating schema
 
+### template / boiler-plate code 
 ```js
 import mongoose from "mongoose";
-const TodoSchema = new mongoose.Schema({
-
-    // schema 
+const TempSchema=new mongoose.Schema({
+    // Schema structure 
 },{timestamps:true});
 
-export const Todo = mongoose.model("Todo", TodoSchema);
+export const Temp=mongoose.model("Temp",TempSchema);
 ```
+
+
 Example User model 
 ```js
 import mongoose from "mongoose"; // module js syntax
