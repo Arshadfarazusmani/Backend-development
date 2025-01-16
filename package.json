@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "\"Notes and code for backend development\"",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arshad Faraz",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.9.5"
+  }
+}
