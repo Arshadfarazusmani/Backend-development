@@ -44,3 +44,6 @@ export {ConnectDB}
  ConnectDB will return a promise ( async - await returns a promis  ) 
 
 
+```js
+const connectionInstance=await mongoose.connect(`${DB_URI}/${DB_name}`)
+```
