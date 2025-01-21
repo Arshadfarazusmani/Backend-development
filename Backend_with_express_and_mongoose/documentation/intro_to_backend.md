@@ -24,3 +24,8 @@ Backend development is the engine that powers applications, ensuring they are fu
 
 ## professional project setup 
 *Make seprate files and folders for each task as used in project  
+
+-> db/db.js
+-> index.js
+-> app.js 
+-> constants 

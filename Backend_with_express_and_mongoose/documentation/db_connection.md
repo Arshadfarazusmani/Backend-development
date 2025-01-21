@@ -1,38 +1,3 @@
-# DataBase connection 
-In this course we are using mongoDB Atlas .
-
-## What is MongoDB Atlas?
-MongoDB Atlas is a cloud-based, fully managed database-as-a-service (DBaaS) provided by MongoDB, Inc.. It simplifies the process of deploying, managing, and scaling MongoDB databases in the cloud. With Atlas, developers can focus on building applications rather than worrying about infrastructure and database maintenance.
-
-### How to Get Started with MongoDB Atlas
-Sign Up:
-
-Create an account at MongoDB Atlas.
-
-Create a Cluster:
-
-Choose a cluster type (shared, dedicated, or serverless).
-Select a cloud provider (AWS, Azure, or GCP) and a region.
-
-Whitelist IP Address:
-
-Add your local machine's IP address or a range of addresses that can access the database.
-
-Connect to Your Cluster:
-
-Use the connection string provided in the Atlas dashboard to connect to your cluster.
-
-.env->
-
-```js
-MONGO_URI=mongodb+srv://Arshad_Faraz_Usmani:your-password@backendlearning.dus8u.mongodb.net
-
-```
-Can be eccess using 
-```js
-const db_uri=Process.env.MONGO_URI
-```
-
 ## DB connection 
 
 ### important points 
@@ -42,7 +7,40 @@ const db_uri=Process.env.MONGO_URI
 
   -> DB alwayes in the other continent 
 
-3. 
+## DB connection 
 
-## DB connection Aproches 
+```js
+// ---> src/constants.js 
+export const DB_name="chai_database"
+```
+we can import DB_name when needed .
+
+```js
+//  ---> src/db/db.js
+
+import mongoose form "mongoose";
+import {DB_name} from "../constants.js" // Importing DB_name from constants.js 
+
+const DB_URI=process.env.MONGO_URI;
+
+
+const ConnectDB=async()=>{
+    try{
+        const connectionInstance=await mongoose.connect(`${DB_URI}/${DB_name}`);
+        console.log(`Database connected to ${connectionInstance.connection.name}`);
+
+    }catch(err){
+        console.log("DataBase connection error ",err);
+        process.exit(1);
+
+    }
+}
+
+
+export {ConnectDB} 
+```
+ we can import ConnectDB function to our index.js file.
+
+ ConnectDB will return a promise ( async - await returns a promis  ) 
+
 
