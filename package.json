@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon Backend_with_express_and_mongoose/Backend_Project/src/index.js"
+    "dev": "nodemon -r dotenv/config  Backend_with_express_and_mongoose/Backend_Project/src/index.js"
   },
   "author": "Arshad Faraz",
   "license": "ISC",

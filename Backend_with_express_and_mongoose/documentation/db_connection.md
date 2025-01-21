@@ -46,36 +46,3 @@ const db_uri=Process.env.MONGO_URI
 
 ## DB connection Aproches 
 
-1. Writing all code in index.js file 
-```js
-
-import express from "express"
-const app = express()
-( async () => {
-    try {
-        await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
-        app.on("errror", (error) => {
-            console.log("ERRR: ", error);
-            throw error
-        })
-
-        app.listen(process.env.PORT, () => {
-            console.log(`App is listening on port ${process.env.PORT}`);
-        })
-
-    } catch (error) {
-        console.error("ERROR: ", error)
-        throw err
-    }
-})()
-
-
-
-```
-2. More professional aproch 
- -> writing Db connection function and app in diffrent files and then import them 
-
-### db/db.js ->
-```js
-
-```
