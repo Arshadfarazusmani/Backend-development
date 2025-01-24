@@ -2,7 +2,7 @@ import dotenv from "dotenv"
 
 
 dotenv.config({
-    path:"Backend_with_express_and_mongoose/Backend_Project/.env"
+    path:"5.Backend-Project/1.source-code/.env"
 });
 
 import {ConnectDB} from "./db/db.js";
